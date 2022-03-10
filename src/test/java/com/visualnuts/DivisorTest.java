@@ -27,6 +27,11 @@ public class DivisorTest {
 	}
 	
 	@Test
+	public void isDivisibleBy5Test() {
+		assertTrue(divisor.isDivisibleBy5(5));
+	}
+	
+	@Test
 	public void isDivisibleBy15Test() {
 		assertTrue(divisor.isDivisibleBy15(15));
 	}
