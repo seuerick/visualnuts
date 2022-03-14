@@ -12,7 +12,6 @@ public class Languages {
 	
 	public static CountryLanguage countryHighestOfficialLanguages(List<CountryLanguage> countryLanguages) {
 		Map<String, List<CountryLanguage>> cl = countryLanguages.stream().collect(Collectors.groupingBy(CountryLanguage::getCountry));
-		System.out.println(cl);
 //		return countryLanguages.stream()
 //				.max(Comparator.comparing(String::valueOf))
 //				.get();
