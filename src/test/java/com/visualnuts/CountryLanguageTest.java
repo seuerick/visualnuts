@@ -35,7 +35,8 @@ public class CountryLanguageTest {
 //	- encontra o país com as línguas mais oficiais, onde se fala oficialmente o alemão (de).
 	@Test
 	public void findCountryWithMostLanguagesWhereGermanSpeakTest() {
-		assertEquals(5, Languages.countCountriesWorld(countries));
+		CountryLanguage countryLanguage = Languages.countryMostOfficialLanguages(countries, "de");
+		assertEquals("BE", countryLanguage.getCountry());
 	}
 	
 //	- that counts all the official languages spoken in the listed countries.
@@ -45,8 +46,8 @@ public class CountryLanguageTest {
 //	- para encontrar o país com o maior número de línguas oficiais.
 	@Test
 	public void findCountryWithHighestOfficialLanguagesTest() {
-		Languages.countryHighestOfficialLanguages(countries);
-//		assertEquals(5, Languages.countryHighestOfficialLanguages(countries));
+		CountryLanguage countryLanguage = Languages.countryMostOfficialLanguages(countries);
+		assertEquals("BE", countryLanguage.getCountry());
 	}
 	
 //	- to find the most common official language(s), of all countries.

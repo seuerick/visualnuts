@@ -23,4 +23,8 @@ public class CountryLanguage {
 	public void setLanguages(List<String> languages) {
 		this.languages = languages;
 	}
+	
+	public Integer getCountLanguages() {
+		return languages.size();
+	}
 }
